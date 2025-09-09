@@ -5,18 +5,18 @@ import { Separator } from "@/components/ui/separator"
 import { CheckCircle, Award, Users, Globe } from "lucide-react"
 
 const features = [
-  "ISO 9001:2015 Certified Operations",
-  "24/7 Customer Support Worldwide",
-  "Advanced Cargo Tracking Systems",
-  "Comprehensive Insurance Coverage",
-  "Experienced Maritime Professionals",
-  "Sustainable Shipping Practices",
+  "Berpengalaman Sejak 2013 dalam Layanan Maritim",
+  "Armada Kapal Handal & Grab Bucket Modern",
+  "Jaringan Luas di Pelabuhan Indonesia",
+  "Layanan Shipping Agency Profesional",
+  "Siap 24/7 dengan Harga Kompetitif",
+  "Komitmen pada Keselamatan & Kepuasan Pelanggan",
 ]
 
 const achievements = [
-  { icon: Award, label: "ISO Certified", value: "9001:2015" },
-  { icon: Users, label: "Expert Team", value: "500+" },
-  { icon: Globe, label: "Global Reach", value: "50+ Countries" },
+  { icon: Award, label: "Experience", value: "10+ Years in Maritime Industry" },
+  { icon: Users, label: "Customer Support", value: "24/7 Service Availability" },
+  { icon: Globe, label: "National Reach", value: "Serving 10+ Ports in Indonesia" },
 ]
 
 export function AboutSection() {
@@ -30,22 +30,20 @@ export function AboutSection() {
                 Maritime Leader
               </Badge>
               <Badge variant="secondary" className="bg-accent/10 text-accent">
-                Est. 1998
+                Est. 2013
               </Badge>
             </div>
 
             <h2 className="font-serif font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">
-              Leading Maritime Excellence Since 1998
+              Solusi Maritim & Logistik Terpercaya di Indonesia
             </h2>
 
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              OceanLink Maritime has been at the forefront of international shipping and logistics, connecting
-              businesses across continents with reliable, efficient, and sustainable maritime solutions.
+              PT. Trans Marindo Succes hadir sebagai mitra strategis Anda dalam layanan pelayaran, shipping agency, dan persewaan alat berat (grab bucket). Dengan armada yang handal, peralatan modern, dan tim berpengalaman, kami memastikan setiap kebutuhan logistik maritim terpenuhi secara cepat, tepat, dan profesional
             </p>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Our commitment to excellence, combined with cutting-edge technology and deep industry expertise, makes us
-              the preferred partner for companies seeking dependable global shipping services.
+              Kami berkomitmen untuk mengutamakan efisiensi, keselamatan, dan kepuasan pelanggan dalam setiap layanan. Didukung jaringan luas di berbagai pelabuhan Indonesia, kami menjadi solusi terpercaya untuk kelancaran operasional laut dan darat Anda
             </p>
 
             <Separator className="my-6" />
@@ -72,7 +70,7 @@ export function AboutSection() {
             </div>
 
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-              Learn More About Us
+              Bangun Kerjasama dengan Kami
             </Button>
           </div>
 
@@ -84,7 +82,7 @@ export function AboutSection() {
             />
             <Card className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground shadow-lg">
               <CardContent className="p-6">
-                <div className="text-2xl font-bold">25+</div>
+                <div className="text-2xl font-bold">10+</div>
                 <div className="text-sm">Years of Excellence</div>
               </CardContent>
             </Card>

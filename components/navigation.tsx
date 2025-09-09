@@ -15,7 +15,8 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Anchor className="h-8 w-8 text-accent" />
-            <span className="font-serif font-bold text-xl text-foreground">OceanLink Maritime</span>
+            <span className="font-serif font-bold text-xl text-foreground">PT. TRANS MARINDO SUCCES
+</span>
           </Link>
 
           {/* Desktop Navigation */}

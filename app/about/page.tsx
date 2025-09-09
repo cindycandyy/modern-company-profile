@@ -23,51 +23,46 @@ const milestones = [
 
 const team = [
   {
-    name: "Captain Ahmad Wijaya",
-    position: "Chief Executive Officer",
+    name: "H. Hadi Julianto",
+    position: "Direktur",
     experience: "30+ years in maritime industry",
     image: "/placeholder.svg?height=300&width=300",
   },
   {
-    name: "Sarah Chen",
-    position: "Chief Operations Officer",
+    name: "Recita Meila Handini",
+    position: "Komisaris",
     experience: "25+ years in logistics management",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/IMG_0808.png",
   },
   {
-    name: "Dr. Michael Rodriguez",
-    position: "Head of Maritime Engineering",
+    name: "Wiwid Supriawan",
+    position: "Kepala Cabang",
     experience: "20+ years in naval architecture",
     image: "/placeholder.svg?height=300&width=300",
   },
-  {
-    name: "Lisa Tanaka",
-    position: "Director of International Relations",
-    experience: "15+ years in global trade",
-    image: "/placeholder.svg?height=300&width=300",
-  },
+  
 ]
 
 const values = [
   {
     icon: Shield,
-    title: "Safety First",
-    description: "Uncompromising commitment to maritime safety standards and crew welfare",
+    title: "Integritas",
+    description: "Menjunjung tinggi kejujuran dan transparansi",
   },
   {
     icon: Target,
-    title: "Reliability",
-    description: "Consistent on-time delivery and dependable service across all operations",
+    title: "Reliabilitas",
+    description: "Dapat diandalkan untuk layanan tepat waktu",
   },
   {
     icon: Heart,
-    title: "Sustainability",
-    description: "Environmental responsibility and sustainable shipping practices",
+    title: "Fokus pada Pelanggan",
+    description: "Kebutuhan klien adalah prioritas utama",
   },
   {
     icon: Users,
-    title: "Partnership",
-    description: "Building long-term relationships based on trust and mutual success",
+    title: "Reliabilitas",
+    description: "Dapat diandalkan untuk layanan tepat waktu",
   },
 ]
 
@@ -90,7 +85,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="font-serif font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-6">
-              About OceanLink Maritime
+              Tentang Kami
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto text-pretty">
               Leading the maritime industry with 25+ years of excellence, innovation, and unwavering commitment to
@@ -107,27 +102,22 @@ export default function AboutPage() {
             <div>
               <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-6">Our Story</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Founded in 1998 by Captain Ahmad Wijaya, OceanLink Maritime began as a vision to revolutionize maritime
-                logistics in Southeast Asia. What started as a small consulting firm has grown into one of the region's
-                most trusted shipping and logistics companies.
+                PT. Trans Marindo Succes adalah perusahaan swasta nasional yang bergerak di bidang layanan pelayaran, keagenan kapal (shipping agency), dan persewaan alat berat khususnya Grab Bucket.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Our journey has been marked by continuous innovation, strategic partnerships, and an unwavering
-                commitment to excellence. Today, we operate a modern fleet serving over 50 countries worldwide, while
-                maintaining the personal touch and reliability that built our reputation.
+                Didirikan pada tahun 2013, kami hadir untuk memberikan solusi logistik maritim yang cepat, aman, dan profesional. Dengan dukungan armada kapal yang handal, tim berpengalaman, serta peralatan bongkar muat modern, kami memastikan setiap operasional pelabuhan berjalan lancar.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                We believe that maritime trade is the backbone of global commerce, and we're proud to play our part in
-                connecting businesses, communities, and cultures across the world's oceans.
+                Kami percaya bahwa kelancaran transportasi laut adalah kunci pertumbuhan ekonomi. Karena itu, komitmen kami adalah menghadirkan efisiensi, keselamatan, dan pelayanan terbaik untuk seluruh klien kami di Indonesia.
               </p>
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                Download Company Profile
+                Siap berkembang bersama kami?
               </Button>
             </div>
             <div className="relative">
               <img
-                src="/placeholder.svg?height=600&width=800"
-                alt="OceanLink Maritime headquarters"
+                src="grab.jpg"
+                alt="grab bucket"
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -170,13 +160,13 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">Leadership Team</h2>
+            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">Struktur Kepemimpinan</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Experienced maritime professionals leading OceanLink Maritime to new horizons
+              Dipimpin oleh para profesional berpengalaman di industri maritim, PT. Trans Marindo Succes siap membawa perusahaan menuju pertumbuhan baru dan memberikan layanan terbaik untuk Anda
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {team.map((member, index) => (
               <Card key={index} className="text-center group hover:shadow-lg transition-all duration-300">
                 <CardHeader>
@@ -203,9 +193,9 @@ export default function AboutPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">Our Values</h2>
+            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">Nilai Perusahaan</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              The principles that guide every decision and action at OceanLink Maritime
+              Nilai kami adalah fondasi pelayanan terbaik untuk Anda
             </p>
           </div>
 
@@ -228,11 +218,9 @@ export default function AboutPage() {
 
           {/* Mission Statement */}
           <div className="bg-primary text-white rounded-2xl p-8 md:p-12 text-center">
-            <h3 className="font-serif font-bold text-2xl md:text-3xl mb-6">Our Mission</h3>
+            <h3 className="font-serif font-bold text-2xl md:text-3xl mb-6">Visi Kami</h3>
             <p className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-pretty">
-              To provide world-class maritime logistics solutions that enable global trade, foster economic growth, and
-              create sustainable value for our clients, partners, and communities while maintaining the highest
-              standards of safety and environmental responsibility.
+              Menjadi perusahaan maritim dan logistik terdepan di Indonesia dengan standar layanan internasional
             </p>
           </div>
         </div>

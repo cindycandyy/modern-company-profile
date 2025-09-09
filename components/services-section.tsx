@@ -4,33 +4,33 @@ import { Truck, Package, FileText, Users, Clock, MapPin } from "lucide-react"
 const services = [
   {
     icon: Truck,
-    title: "Freight Forwarding",
-    description: "Comprehensive freight forwarding services for air, sea, and land transportation worldwide.",
+    title: "Pengiriman Antar Pulau",
+    description: "Jasa pengiriman barang antar pulau dengan jaringan rute yang luas dan fleksibel",
   },
   {
     icon: Package,
-    title: "Cargo Management",
-    description: "Professional cargo handling, packaging, and storage solutions with real-time tracking.",
+    title: "Pelayaran Antar Pulau",
+    description: "Layanan pelayaran laut antar pulau di seluruh Indonesia dengan armada terpercaya",
   },
   {
     icon: FileText,
-    title: "Customs Clearance",
-    description: "Expert customs brokerage and documentation services to ensure smooth border crossings.",
+    title: "Pengangkutan Muatan Curah",
+    description: "Transportasi kargo curah secara efisien dengan penanganan profesional",
   },
   {
     icon: Users,
-    title: "Supply Chain Consulting",
-    description: "Strategic supply chain optimization and logistics consulting for maximum efficiency.",
+    title: "Sewa Alat Berat",
+    description: "Penyediaan alat berat, khususnya Grab Bucket, untuk mendukung kebutuhan proyek Anda",
   },
   {
     icon: Clock,
-    title: "Express Delivery",
-    description: "Time-critical shipping solutions with guaranteed delivery schedules worldwide.",
+    title: "Logistik Konstruksi",
+    description: "Pengiriman material bangunan dan peralatan konstruksi tepat waktu dan aman",
   },
   {
     icon: MapPin,
-    title: "Door-to-Door Service",
-    description: "Complete end-to-end logistics solutions from pickup to final destination delivery.",
+    title: "Layanan Keagenan Kapal",
+    description: "Melayani keagenan kapal di wilayah Kendari & Molawe, Sulawesi Tenggara",
   },
 ]
 
@@ -39,9 +39,9 @@ export function ServicesSection() {
     <section id="services" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-serif font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">Our Services</h2>
+          <h2 className="font-serif font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">Layanan Kami</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Comprehensive maritime and logistics solutions tailored to meet your international trade requirements
+            Solusi pengiriman dan logistik antar pulau yang cepat, aman, dan terpercaya di seluruh Indonesia
           </p>
         </div>
 

@@ -2,36 +2,36 @@ import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Truck, Package, FileText, MapPin, Ship, Plane, Container, Shield, BarChart3, Headphones } from "lucide-react"
-
+import { Truck, Package, FileText, MapPin, Ship, ShipWheel, Container, Shield, BarChart3, Headphones } from "lucide-react"
+  
 const mainServices = [
   {
     icon: Ship,
-    title: "Ocean Freight",
-    description: "Full container load (FCL) and less than container load (LCL) services worldwide",
-    features: ["Door-to-door delivery", "Real-time tracking", "Customs clearance", "Insurance coverage"],
-    routes: "500+ global routes",
+    title: "Shipping Agency",
+    description: "Layanan keagenan kapal yang mengurus semua kebutuhan kapal Anda di pelabuhan",
+    features: ["Clearance in/out kapal", "Koordinasi dengan otoritas pelabuhan", "Bunker & fresh water supply"],
+    routes: "Hemat waktu, semua urusan kapal kami yang handle!",
   },
   {
-    icon: Plane,
-    title: "Air Freight",
-    description: "Express air cargo services for time-sensitive shipments",
-    features: ["Same-day pickup", "Priority handling", "Temperature control", "Dangerous goods certified"],
-    routes: "200+ airports worldwide",
+    icon: ShipWheel,
+    title: "Pelayaran Antar Pulau",
+    description: "Pengiriman barang antar pulau dengan armada kapal handal untuk berbagai jenis kargo",
+    features: ["Kargo curah (batu bara, nikel, pasir, dll.", "Konstruksi & material bangunan", "Layanan door-to-door"],
+    routes: "Percayakan distribusi besar Anda bersama kami!",
   },
   {
     icon: Truck,
-    title: "Land Transportation",
-    description: "Comprehensive trucking and rail freight solutions",
-    features: ["Cross-border transport", "Specialized vehicles", "Last-mile delivery", "Warehousing"],
-    routes: "Pan-Asian network",
+    title: "Transportasi Darat",
+    description: "Trucking & rail freight untuk konektivitas darat tanpa hambatan",
+    features: ["Cross-border transport", "Last-mile delivery", "Warehousing"],
+    routes: "Jangkau tujuan Anda sampai titik akhir!",
   },
   {
     icon: Container,
-    title: "Project Cargo",
-    description: "Heavy lift and oversized cargo handling expertise",
-    features: ["Engineering support", "Route surveys", "Special equipment", "Risk management"],
-    routes: "Global project sites",
+    title: "Persewaan Alat Berat (Grab Bucket)",
+    description: "Mendukung aktivitas bongkar muat material curah dengan peralatan modern",
+    features: ["Grab bucket berkualitas", "Perawatan rutin & siap pakai", "Cocok untuk proyek jangka pendek & panjang"],
+    routes: "Proyek lancar, biaya efisien, hasil maksimal!",
   },
 ]
 
@@ -88,9 +88,9 @@ export default function ServicesPage() {
       <section className="pt-24 pb-16 bg-gradient-to-br from-primary to-primary/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="font-serif font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-6">Our Services</h1>
+            <h1 className="font-serif font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-6">Layanan Kami</h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto text-pretty">
-              Comprehensive maritime logistics solutions tailored to meet your global shipping requirements
+              Solusi logistik maritim terpadu yang siap menghubungkan bisnis Anda ke seluruh penjuru Indonesia
             </p>
           </div>
         </div>
@@ -101,10 +101,10 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">
-              Core Transportation Services
+              Solusi Transportasi Global
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Multi-modal transportation solutions connecting every corner of the globe
+              Multi–modal, efisien, dan terpercaya untuk setiap pengiriman Anda
             </p>
           </div>
 
