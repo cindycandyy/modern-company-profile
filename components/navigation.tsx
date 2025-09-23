@@ -14,7 +14,8 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Anchor className="h-8 w-8 text-accent" />
+          <img src="/logo.jpg" alt="Logo" className="h-8 w-8" />
+
             <span className="font-serif font-bold text-xl text-foreground">PT. TRANS MARINDO SUCCES
 </span>
           </Link>
@@ -30,9 +31,9 @@ export function Navigation() {
             <Link href="/services" className="text-foreground hover:text-accent transition-colors">
               Services
             </Link>
-            <Link href="/fleet" className="text-foreground hover:text-accent transition-colors">
+            {/* <Link href="/fleet" className="text-foreground hover:text-accent transition-colors">
               Fleet
-            </Link>
+            </Link> */}
             <Link href="/contact" className="text-foreground hover:text-accent transition-colors">
               Contact
             </Link>

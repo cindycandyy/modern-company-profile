@@ -5,19 +5,19 @@ import { Badge } from "@/components/ui/badge"
 import { Users, Shield, Target, Heart, CheckCircle, Calendar } from "lucide-react"
 
 const milestones = [
-  { year: "1998", title: "Company Founded", description: "Started as a small maritime consulting firm in Jakarta" },
-  { year: "2003", title: "First International Route", description: "Expanded operations to Singapore and Malaysia" },
-  { year: "2008", title: "Fleet Expansion", description: "Acquired our first container vessels" },
-  { year: "2015", title: "Digital Transformation", description: "Implemented advanced tracking and logistics systems" },
+  { year: "2011", title: "Perushaan Berdiri", description: "Didirikan oleh empat sahabat dengan modal awal Rp200 juta sebagai perusahaan jasa shipping & general cargo" },
+  { year: "2013", title: "Restrukturisasi Saham", description: "Perusahaan dibuka kembali dengan kepemilikan baru (Sutarto & Hadi Julianto), meski belum aktif beroperasi hingga 2020" },
+  { year: "2020", title: "Kebangkitan", description: "Meningkatkan modal menjadi 500.000 lembar saham sebagai fondasi kebangkitan perusahaan" },
+  { year: "2021", title: "Titik Balik", description: "Melakukan kontrak pertama dengan PT Obsidian Stainless Steel dan membeli 4 unit grab bucket" },
   {
-    year: "2020",
-    title: "Sustainability Initiative",
-    description: "Launched green shipping and carbon-neutral programs",
+    year: "2022",
+    title: "Ekspansi Usaha",
+    description: "Menambah armada kapal LCT senilai Rp5 miliar dan memperluas usaha ke Shipping Agency dengan resmi memperoleh SIUPAL",
   },
   {
-    year: "2024",
-    title: "Global Recognition",
-    description: "Awarded Best Maritime Service Provider in Southeast Asia",
+    year: "2024–2025",
+    title: "Pertumbuhan Pesat",
+    description: "Mendapat kontrak time charter dengan PT Wijaya Karya, akuisisi kepemilikan saham baru (Hadi Julianto & Recita Meila Handini), serta menjalin kerjasama strategis dengan perusahaan besar di bidang pelayaran dan shipping agency",
   },
 ]
 
@@ -25,20 +25,20 @@ const team = [
   {
     name: "H. Hadi Julianto",
     position: "Direktur",
-    experience: "30+ years in maritime industry",
-    image: "/placeholder.svg?height=300&width=300",
+    experience: "Lebih dari 10 tahun berpengalaman di industri maritim",
+    image: "/hadi.jpg",
   },
   {
     name: "Recita Meila Handini",
     position: "Komisaris",
-    experience: "25+ years in logistics management",
+    experience: "Mahasiswa Manajemen Bisnis dengan pengalaman di bidang logistik",
     image: "/IMG_0808.png",
   },
   {
     name: "Wiwid Supriawan",
     position: "Kepala Cabang",
-    experience: "20+ years in naval architecture",
-    image: "/placeholder.svg?height=300&width=300",
+    experience: "Berpengalaman lebih dari 10 tahun di bidang operasional pelayaran dan keagenan kapal",
+    image: "/wiwit.jpg",
   },
   
 ]
@@ -88,8 +88,7 @@ export default function AboutPage() {
               Tentang Kami
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto text-pretty">
-              Leading the maritime industry with 25+ years of excellence, innovation, and unwavering commitment to
-              connecting global trade
+              Berpengalaman di industri maritim dengan fokus pada inovasi dan layanan terpercaya untuk mendukung konektivitas perdagangan
             </p>
           </div>
         </div>
@@ -131,7 +130,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">Our Journey</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Key milestones that shaped OceanLink Maritime into the industry leader we are today
+              Tonggak penting yang membentuk PT Trans Marindo Succes hingga menjadi perusahaan seperti sekarang
             </p>
           </div>
 
@@ -226,7 +225,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Certifications */}
+      {/* Certifications
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -247,27 +246,27 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact CTA */}
       <section className="py-20 bg-accent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-accent-foreground mb-6">
-            Ready to Partner with Us?
+            Siap Bermitra dengan Kami?
           </h2>
           <p className="text-xl text-accent-foreground/90 mb-8 max-w-3xl mx-auto">
-            Join hundreds of satisfied clients who trust OceanLink Maritime for their global shipping needs
+            Bergabunglah bersama ratusan klien yang sudah mempercayai PT. Trans Marindo Succes untuk kebutuhan pengiriman global mereka
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="bg-white text-accent hover:bg-white/90">
-              Get in Touch
+              Dapatkan Penawaran
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-accent bg-transparent"
             >
-              Request Quote
+              Hubungi Kami
             </Button>
           </div>
         </div>

@@ -233,7 +233,7 @@ export default function AdminDashboard() {
                   </CardContent>
                 </Card>
 
-                {/* Fleet Status */}
+                Fleet Status
                 <Card>
                   <CardHeader>
                     <CardTitle>Fleet Status</CardTitle>

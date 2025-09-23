@@ -20,8 +20,8 @@ const sourceSansPro = Source_Sans_3({
 })
 
 export const metadata: Metadata = {
-  title: "OceanLink Maritime - Export Import Solutions",
-  description: "Professional maritime export-import services with global reach and reliable shipping solutions",
+  title: "PT.Trans Marindo Succes - Export Import Solutions",
+  description: "Professional maritime export-import services with national reach and reliable shipping solutions",
   generator: "v0.app",
 }
 

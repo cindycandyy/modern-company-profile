@@ -38,18 +38,18 @@ const mainServices = [
 const additionalServices = [
   {
     icon: FileText,
-    title: "Customs Brokerage",
-    description: "Expert customs clearance and trade compliance services",
+    title: "Jasa Pelayaran",
+    description: "Pengangkutan kargo curah antar pulau dengan armada tugboat & tongkang",
   },
   {
     icon: Package,
-    title: "Warehousing & Distribution",
-    description: "Strategic storage and distribution center management",
+    title: "Shipping Agency",
+    description: "Pengurusan dokumen kapal, clearance, dan koordinasi pelabuhan",
   },
   {
     icon: BarChart3,
-    title: "Supply Chain Consulting",
-    description: "Optimization strategies for efficient logistics operations",
+    title: "Persewaan Alat Berat (Grab Bucket)",
+    description: "Alat bongkar muat curah yang modern & siap pakai",
   },
   {
     icon: Shield,
@@ -141,12 +141,12 @@ export default function ServicesPage() {
       </section>
 
       {/* Additional Services */}
-      <section className="py-20 bg-muted/30">
+      {/* <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">Value-Added Services</h2>
+            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">Layanan</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Complete logistics support services to streamline your supply chain
+              kami hadir untuk meningkatkan kinerja bisnis Anda
             </p>
           </div>
 
@@ -166,9 +166,9 @@ export default function ServicesPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Industries Served */}
+      {/* Industries Served
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -190,27 +190,27 @@ export default function ServicesPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-accent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-accent-foreground mb-6">
-            Need a Custom Solution?
+            Butuh Solusi Khusus?
           </h2>
           <p className="text-xl text-accent-foreground/90 mb-8 max-w-3xl mx-auto">
-            Our experts are ready to design a tailored logistics solution for your specific requirements
+            Tim ahli kami siap merancang solusi logistik yang sesuai dengan kebutuhan bisnis Anda
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="bg-white text-accent hover:bg-white/90">
-              Request Consultation
+              Ajukan Konsultasi
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-accent bg-transparent"
             >
-              Get Quote
+              Dapatkan Penawaran
             </Button>
           </div>
         </div>

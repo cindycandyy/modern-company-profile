@@ -11,40 +11,31 @@ import { MapPin, Phone, Mail, Clock, Send, MessageSquare, FileText, Ship } from 
 
 const offices = [
   {
-    city: "Jakarta",
-    country: "Indonesia",
-    type: "Headquarters",
-    address: "Jl. Sudirman Kav. 52-53, Jakarta 12190",
+    city: "Surabaya",
+    country: "Jawa Timur, Indonesia",
+    type: "Kantor Pusat",
+    address: "Pelidno Place Office tower, Jl. Perak Timur No. 478, Lantai 9, Perak Timur, Kec. Pabean Cantikan, Surabaya, Jawa Timur, 60165",
     phone: "+62 21 2555 7000",
     email: "jakarta@oceanlink.com",
     hours: "Mon-Fri: 8:00 AM - 6:00 PM",
   },
   {
-    city: "Singapore",
-    country: "Singapore",
-    type: "Regional Office",
-    address: "1 Marina Bay, Singapore 018989",
-    phone: "+65 6555 8000",
-    email: "singapore@oceanlink.com",
+    city: "Banjarmasin",
+    country: "Kalimantan Selatan, Indonesia",
+    type: "Kantor Cabang",
+    address: "Jl. Skip Lama No.25, Antasan Besar, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan 70115",
+    phone: "081372151020",
+    email: "transmarindosuccess22@gmail.com",
     hours: "Mon-Fri: 9:00 AM - 6:00 PM",
   },
   {
-    city: "Hong Kong",
-    country: "China",
-    type: "Branch Office",
-    address: "Central Plaza, 18 Harbour Rd, Wan Chai",
-    phone: "+852 2555 9000",
-    email: "hongkong@oceanlink.com",
+    city: "Kendari",
+    country: "Sulawesi Tenggara, Indonesia",
+    type: "Kantor Cabang",
+    address: "Perumahan Green Anggoeya resort Kendari, Anggoeya, Kec. Poasia, Kota Kendari, Sulawesi Tenggara",
+    phone: "085230027777",
+    email: "tmscabangkendari17@gmail.com",
     hours: "Mon-Fri: 9:00 AM - 6:00 PM",
-  },
-  {
-    city: "Rotterdam",
-    country: "Netherlands",
-    type: "European Office",
-    address: "Wilhelminakade 123, 3072 AP Rotterdam",
-    phone: "+31 10 555 1000",
-    email: "rotterdam@oceanlink.com",
-    hours: "Mon-Fri: 8:30 AM - 5:30 PM",
   },
 ]
 
@@ -81,7 +72,7 @@ export default function ContactPage() {
           <div className="text-center">
             <h1 className="font-serif font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-6">Contact Us</h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto text-pretty">
-              Get in touch with our maritime experts for personalized shipping solutions
+              kami siap membantu Anda dengan kebutuhan logistik maritim Anda
             </p>
           </div>
         </div>
@@ -376,14 +367,14 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 text-accent" />
                     <div>
                       <p className="font-semibold">Email</p>
-                      <p className="text-sm text-muted-foreground">info@oceanlink.com</p>
+                      <p className="text-sm text-muted-foreground">transmarindosuccess22@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Clock className="h-5 w-5 text-accent" />
                     <div>
                       <p className="font-semibold">Business Hours</p>
-                      <p className="text-sm text-muted-foreground">Mon-Fri: 8:00 AM - 6:00 PM</p>
+                      <p className="text-sm text-muted-foreground">Senin - Jum'at : 09.00 s/d 17.00 </p>
                     </div>
                   </div>
                 </CardContent>
@@ -413,13 +404,13 @@ export default function ContactPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">Our Offices</h2>
+            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">Jangkauan Nasional, Layanan Lokal</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Global presence with local expertise in key maritime hubs
+              Kami hadir di kota-kota pelabuhan strategis untuk mendukung kebutuhan logistik Anda
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {offices.map((office, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
@@ -462,7 +453,7 @@ export default function ContactPage() {
           <div className="text-center mb-12">
             <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">Find Us</h2>
             <p className="text-xl text-muted-foreground">
-              Visit our headquarters in Jakarta or any of our global offices
+              kunjungi kantor kami atau lihat lokasi peta interaktif di bawah ini
             </p>
           </div>
 
