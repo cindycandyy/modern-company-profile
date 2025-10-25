@@ -37,7 +37,6 @@ export function Navigation() {
             <Link href="/contact" className="text-foreground hover:text-accent transition-colors">
               Contact
             </Link>
-            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">Get Quote</Button>
           </div>
 
           {/* Mobile menu button */}
@@ -67,7 +66,6 @@ export function Navigation() {
               <Link href="/contact" className="block px-3 py-2 text-foreground hover:text-accent">
                 Contact
               </Link>
-              <Button className="w-full mt-2 bg-accent hover:bg-accent/90 text-accent-foreground">Get Quote</Button>
             </div>
           </div>
         )}

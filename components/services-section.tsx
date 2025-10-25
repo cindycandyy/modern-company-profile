@@ -2,30 +2,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Truck, Package, FileText, Users, Clock, MapPin } from "lucide-react"
 
 const services = [
-  {
-    icon: Truck,
-    title: "Pengiriman Antar Pulau",
-    description: "Jasa pengiriman barang antar pulau dengan jaringan rute yang luas dan fleksibel",
-  },
+
   {
     icon: Package,
     title: "Pelayaran Antar Pulau",
     description: "Layanan pelayaran laut antar pulau di seluruh Indonesia dengan armada terpercaya",
   },
   {
-    icon: FileText,
-    title: "Pengangkutan Muatan Curah",
-    description: "Transportasi kargo curah secara efisien dengan penanganan profesional",
-  },
-  {
     icon: Users,
     title: "Sewa Alat Berat",
     description: "Penyediaan alat berat, khususnya Grab Bucket, untuk mendukung kebutuhan proyek Anda",
-  },
-  {
-    icon: Clock,
-    title: "Logistik Konstruksi",
-    description: "Pengiriman material bangunan dan peralatan konstruksi tepat waktu dan aman",
   },
   {
     icon: MapPin,

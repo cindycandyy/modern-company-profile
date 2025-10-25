@@ -22,7 +22,7 @@ export function HeroSection() {
         </h1>
 
         <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto text-pretty">
-          Dari layanan shipping agency hingga persewaan grab bucket, kami hadir untuk memastikan kelancaran operasional laut dan darat Anda.
+          Sebagai one stop maritime shipping solution, kami menyediakan layanan terpadu mulai dari shipping agency hingga persewaan alat berat untuk mendukung kelancaran operasional laut dan darat Anda
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

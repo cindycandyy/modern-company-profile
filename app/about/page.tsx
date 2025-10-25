@@ -36,10 +36,23 @@ const team = [
   },
   {
     name: "Wiwid Supriawan",
-    position: "Kepala Cabang",
+    position: "Kepala Cabang Kendari",
     experience: "Berpengalaman lebih dari 10 tahun di bidang operasional pelayaran dan keagenan kapal",
     image: "/wiwit.jpg",
   },
+  {
+    name: "Harianto",
+    position: "Kepala Cabang Banjarmasin",
+    experience: "Lebih dari 10 tahun berpengalaman di industri maritim",
+    image: "/harianto.png",
+  },
+  {
+    name: "Novita Sari",
+    position: "Kepala Cabang Surabaya",
+    experience: "Lebih dari 10 tahun berpengalaman di industri maritim",
+    image: "/novita.png",
+  },
+
   
 ]
 
@@ -188,6 +201,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      
       {/* Values & Mission */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -197,8 +211,9 @@ export default function AboutPage() {
               Nilai kami adalah fondasi pelayanan terbaik untuk Anda
             </p>
           </div>
+          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {values.map((value, index) => (
               <Card
                 key={index}
@@ -215,62 +230,63 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* Mission Statement */}
-          <div className="bg-primary text-white rounded-2xl p-8 md:p-12 text-center">
-            <h3 className="font-serif font-bold text-2xl md:text-3xl mb-6">Visi Kami</h3>
-            <p className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-pretty">
-              Menjadi perusahaan maritim dan logistik terdepan di Indonesia dengan standar layanan internasional
-            </p>
-          </div>
-        </div>
-      </section>
+      <div>
+    {/* Vision Statement */}
+    <div className="bg-primary text-white rounded-2xl p-8 md:p-12 text-center mb-8">
+    <h3 className="font-serif font-bold text-2xl md:text-3xl mb-6">Visi Kami</h3>
+    <p className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-pretty">
+      Menjadi perusahaan pelayaran terdepan dalam inovasi dan efisiensi, serta terintegritas dalam layanan maritim dan logistik di Perairan Indonesia yang memberikan solusi terbaik dengan standar internasional, serta menghubungkan dunia dengan solusi angkutan logistik maritim yang andal dan berkelanjutan.
+    </p>
+  </div>
 
-      {/* Certifications
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">
-              Certifications & Compliance
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Maintaining the highest industry standards through rigorous certification and compliance programs
-            </p>
-          </div>
+  {/* Mission Statement */}
+<div className="bg-secondary text-white rounded-2xl p-8 md:p-12 text-center">
+  <h3 className="font-serif font-bold text-2xl md:text-3xl mb-6">Misi Kami</h3>
+  <ul className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-left list-decimal list-inside space-y-3">
+    <li>
+      Memberikan pelayanan pelayaran dan shipping agency yang cepat, tepat, aman, dan terpercaya.
+    </li>
+    <li>
+      Memberikan solusi persewaan alat berat yang efisien dan cost-effective.
+    </li>
+    <li>
+      Membangun kemitraan strategis dengan pelanggan dan mitra perusahaan berdasarkan kepercayaan dan transparansi.
+    </li>
+    <li>
+      Menciptakan lingkungan kerja yang aman dan memberdayakan bagi seluruh karyawan.
+    </li>
+    <li>
+      Mengutamakan keselamatan, kualitas, dan kepuasan pelanggan.
+    </li>
+  </ul>
+</div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {certifications.map((cert, index) => (
-              <div key={index} className="flex items-center space-x-3 p-4 bg-card rounded-lg border">
-                <CheckCircle className="h-6 w-6 text-accent flex-shrink-0" />
-                <span className="text-foreground font-medium">{cert}</span>
+            </div>
+          </section>
+          
+          {/* Contact CTA */}
+          <section className="py-20 bg-accent">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <h2 className="font-serif font-bold text-3xl md:text-4xl text-accent-foreground mb-6">
+                Siap Bermitra dengan Kami?
+              </h2>
+              <p className="text-xl text-accent-foreground/90 mb-8 max-w-3xl mx-auto">
+                Bergabunglah bersama ratusan klien yang sudah mempercayai PT. Trans Marindo Succes untuk kebutuhan pengiriman global mereka
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" variant="secondary" className="bg-white text-accent hover:bg-white/90">
+                  Dapatkan Penawaran
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white text-white hover:bg-white hover:text-accent bg-transparent"
+                >
+                  Hubungi Kami
+                </Button>
               </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      {/* Contact CTA */}
-      <section className="py-20 bg-accent">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif font-bold text-3xl md:text-4xl text-accent-foreground mb-6">
-            Siap Bermitra dengan Kami?
-          </h2>
-          <p className="text-xl text-accent-foreground/90 mb-8 max-w-3xl mx-auto">
-            Bergabunglah bersama ratusan klien yang sudah mempercayai PT. Trans Marindo Succes untuk kebutuhan pengiriman global mereka
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="bg-white text-accent hover:bg-white/90">
-              Dapatkan Penawaran
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-accent bg-transparent"
-            >
-              Hubungi Kami
-            </Button>
-          </div>
-        </div>
-      </section>
-    </main>
+            </div>
+          </section>
+        </main>
   )
 }

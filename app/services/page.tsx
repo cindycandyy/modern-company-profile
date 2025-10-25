@@ -14,16 +14,9 @@ const mainServices = [
   },
   {
     icon: ShipWheel,
-    title: "Pelayaran Antar Pulau",
-    description: "Pengiriman barang antar pulau dengan armada kapal handal untuk berbagai jenis kargo",
-    features: ["Kargo curah (batu bara, nikel, pasir, dll.", "Konstruksi & material bangunan", "Layanan door-to-door"],
-    routes: "Percayakan distribusi besar Anda bersama kami!",
-  },
-  {
-    icon: Truck,
-    title: "Transportasi Darat",
-    description: "Trucking & rail freight untuk konektivitas darat tanpa hambatan",
-    features: ["Cross-border transport", "Last-mile delivery", "Warehousing"],
+    title: "Shipping Services",
+    description: "Kami melayani pengangkutan kargo curah antar pulau dengan kapal tugboat dan tongkang, seperti batu bara, nikel, pasir, dan bahan baku industri.",
+    features: ["Rute Fleksibel", "Kargo Curah (Bulk Cargo)", "Operasi Skala Besar"],
     routes: "Jangkau tujuan Anda sampai titik akhir!",
   },
   {
@@ -139,58 +132,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
-      {/* Additional Services */}
-      {/* <section className="py-20 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">Layanan</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              kami hadir untuk meningkatkan kinerja bisnis Anda
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {additionalServices.map((service, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                <CardHeader className="text-center">
-                  <service.icon className="h-10 w-10 text-accent mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-                  <CardTitle className="text-lg">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-center text-base leading-relaxed">
-                    {service.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      {/* Industries Served
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">Industries We Serve</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Specialized logistics solutions across diverse industry sectors
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {industries.map((industry, index) => (
-              <div
-                key={index}
-                className="p-6 bg-card rounded-lg border hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              >
-                <h3 className="font-semibold text-lg text-foreground mb-2">{industry.name}</h3>
-                <p className="text-muted-foreground text-sm">{industry.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-accent">

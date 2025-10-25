@@ -22,7 +22,6 @@ const sourceSansPro = Source_Sans_3({
 export const metadata: Metadata = {
   title: "PT.Trans Marindo Succes - Export Import Solutions",
   description: "Professional maritime export-import services with national reach and reliable shipping solutions",
-  generator: "v0.app",
 }
 
 export default function RootLayout({
