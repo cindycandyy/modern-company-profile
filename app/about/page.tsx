@@ -69,13 +69,13 @@ const values = [
   },
   {
     icon: Heart,
-    title: "Fokus pada Pelanggan",
-    description: "Kebutuhan klien adalah prioritas utama",
+    title: "profesionalisme",
+    description: "Menjalankan bisnis dengan standar profesional tinggi",
   },
   {
     icon: Users,
-    title: "Reliabilitas",
-    description: "Dapat diandalkan untuk layanan tepat waktu",
+    title: "Customer Focus",
+    description: "Mengutamakan kepuasan pelanggan dalam setiap layanan",
   },
 ]
 

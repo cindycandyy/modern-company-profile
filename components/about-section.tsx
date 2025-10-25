@@ -76,7 +76,7 @@ export function AboutSection() {
 
           <div className="relative">
             <img
-              src="/modern-shipping-port-with-containers-and-cranes.jpg"
+              src="/ship2.jpg"
               alt="Modern shipping port"
               className="rounded-lg shadow-2xl"
             />
