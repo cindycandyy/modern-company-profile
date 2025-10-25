@@ -9,9 +9,9 @@ const offices = [
     country: "Jawa Timur, Indonesia",
     type: "Kantor Pusat",
     address: "Pelidno Place Office tower, Jl. Perak Timur No. 478, Lantai 9, Perak Timur, Kec. Pabean Cantikan, Surabaya, Jawa Timur, 60165",
-    phone: "+62 21 2555 7000",
-    email: "jakarta@oceanlink.com",
-    hours: "Mon-Fri: 8:00 AM - 6:00 PM",
+    phone: "-",
+    email: "-",
+    hours: "Senin - Jum'at: 09.00 s/d 17.00",
   },
   {
     city: "Banjarmasin",
@@ -20,7 +20,7 @@ const offices = [
     address: "Jl. Skip Lama No.25, Antasan Besar, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan 70115",
     phone: "081372151020",
     email: "transmarindosuccess22@gmail.com",
-    hours: "Mon-Fri: 9:00 AM - 6:00 PM",
+    hours: "Senin - Jum'at: 09.00 s/d 17.00",
   },
   {
     city: "Kendari",
@@ -29,7 +29,7 @@ const offices = [
     address: "Perumahan Green Anggoeya Resort Kendari, Anggoeya, Kec. Poasia, Kota Kendari, Sulawesi Tenggara",
     phone: "085230027777",
     email: "tmscabangkendari17@gmail.com",
-    hours: "Mon-Fri: 9:00 AM - 6:00 PM",
+    hours: "Senin - Jum'at: 09.00 s/d 17.00",
   },
 ]
 
