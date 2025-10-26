@@ -1,9 +1,10 @@
+"use client"
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Truck, Package, FileText, MapPin, Ship, ShipWheel, Container, Shield, BarChart3, Headphones } from "lucide-react"
-  
+import { Package, FileText, MapPin, Ship, ShipWheel, Container, Shield, BarChart3, Headphones } from "lucide-react"
+
 const mainServices = [
   {
     icon: Ship,
@@ -139,19 +140,20 @@ export default function ServicesPage() {
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-accent-foreground mb-6">
             Butuh Solusi Khusus?
           </h2>
-          <p className="text-xl text-accent-foreground/90 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-accent-foreground/90 mb-6 max-w-3xl mx-auto">
             Tim ahli kami siap merancang solusi logistik yang sesuai dengan kebutuhan bisnis Anda
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="bg-white text-accent hover:bg-white/90">
-              Ajukan Konsultasi
-            </Button>
+            {/* TODO: Direct */}
             <Button
               size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-accent bg-transparent"
+              variant="secondary"
+              className="bg-white text-accent hover:bg-white/90 cursor-pointer"
+              onClick={() => {
+                window.open(`https://wa.me/085333379115`, "_blank", "noopener,noreferrer");
+              }}
             >
-              Dapatkan Penawaran
+              Ajukan Konsultasi
             </Button>
           </div>
         </div>

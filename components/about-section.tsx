@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
@@ -69,7 +70,14 @@ export function AboutSection() {
               ))}
             </div>
 
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+            {/* TODO: Direct */}
+            <Button
+              size="lg"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground cursor-pointer"
+              onClick={() => {
+                window.open(`https://wa.me/085333379115`, "_blank", "noopener,noreferrer");
+              }}
+            >
               Bangun Kerjasama dengan Kami
             </Button>
           </div>

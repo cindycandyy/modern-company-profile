@@ -1,8 +1,10 @@
+"use client"
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Users, Shield, Target, Heart, CheckCircle, Calendar } from "lucide-react"
+import { Users, Shield, Target, Heart, Calendar } from "lucide-react"
+import { useRouter } from "next/navigation"
 
 const milestones = [
   { year: "2011", title: "Perushaan Berdiri", description: "Didirikan oleh empat sahabat dengan modal awal Rp200 juta sebagai perusahaan jasa shipping & general cargo" },
@@ -53,7 +55,7 @@ const team = [
     image: "/novita.png",
   },
 
-  
+
 ]
 
 const values = [
@@ -89,6 +91,8 @@ const certifications = [
 ]
 
 export default function AboutPage() {
+  const router = useRouter();
+
   return (
     <main className="min-h-screen">
       <Navigation />
@@ -122,7 +126,13 @@ export default function AboutPage() {
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 Kami percaya bahwa kelancaran transportasi laut adalah kunci pertumbuhan ekonomi. Karena itu, komitmen kami adalah menghadirkan efisiensi, keselamatan, dan pelayanan terbaik untuk seluruh klien kami di Indonesia.
               </p>
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+              <Button
+                size="lg"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground cursor-pointer"
+                onClick={() => {
+                  window.open(`https://wa.me/085333379115`, "_blank", "noopener,noreferrer");
+                }}
+              >
                 Siap berkembang bersama kami?
               </Button>
             </div>
@@ -201,7 +211,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      
+
       {/* Values & Mission */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -211,82 +221,93 @@ export default function AboutPage() {
               Nilai kami adalah fondasi pelayanan terbaik untuk Anda
             </p>
           </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          {values.map((value, index) => (
+            <Card
+              key={index}
+              className="text-center group hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+            >
+              <CardHeader>
+                <value.icon className="h-12 w-12 text-accent mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+                <CardTitle className="text-xl">{value.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-base leading-relaxed">{value.description}</CardDescription>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <div>
+          {/* Vision Statement */}
+          <div className="bg-primary text-white rounded-2xl p-8 md:p-12 text-center mb-8">
+            <h3 className="font-serif font-bold text-2xl md:text-3xl mb-6">Visi Kami</h3>
+            <p className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-pretty">
+              Menjadi perusahaan pelayaran terdepan dalam inovasi dan efisiensi, serta terintegritas dalam layanan maritim dan logistik di Perairan Indonesia yang memberikan solusi terbaik dengan standar internasional, serta menghubungkan dunia dengan solusi angkutan logistik maritim yang andal dan berkelanjutan.
+            </p>
           </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            {values.map((value, index) => (
-              <Card
-                key={index}
-                className="text-center group hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              >
-                <CardHeader>
-                  <value.icon className="h-12 w-12 text-accent mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-                  <CardTitle className="text-xl">{value.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed">{value.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
+          {/* Mission Statement */}
+          <div className="bg-secondary text-white rounded-2xl p-8 md:p-12 text-center">
+            <h3 className="font-serif font-bold text-2xl md:text-3xl mb-6">Misi Kami</h3>
+            <ul className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-left list-decimal list-inside space-y-3">
+              <li>
+                Memberikan pelayanan pelayaran dan shipping agency yang cepat, tepat, aman, dan terpercaya.
+              </li>
+              <li>
+                Memberikan solusi persewaan alat berat yang efisien dan cost-effective.
+              </li>
+              <li>
+                Membangun kemitraan strategis dengan pelanggan dan mitra perusahaan berdasarkan kepercayaan dan transparansi.
+              </li>
+              <li>
+                Menciptakan lingkungan kerja yang aman dan memberdayakan bagi seluruh karyawan.
+              </li>
+              <li>
+                Mengutamakan keselamatan, kualitas, dan kepuasan pelanggan.
+              </li>
+            </ul>
           </div>
 
-      <div>
-    {/* Vision Statement */}
-    <div className="bg-primary text-white rounded-2xl p-8 md:p-12 text-center mb-8">
-    <h3 className="font-serif font-bold text-2xl md:text-3xl mb-6">Visi Kami</h3>
-    <p className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-pretty">
-      Menjadi perusahaan pelayaran terdepan dalam inovasi dan efisiensi, serta terintegritas dalam layanan maritim dan logistik di Perairan Indonesia yang memberikan solusi terbaik dengan standar internasional, serta menghubungkan dunia dengan solusi angkutan logistik maritim yang andal dan berkelanjutan.
-    </p>
-  </div>
+        </div>
+      </section>
 
-  {/* Mission Statement */}
-<div className="bg-secondary text-white rounded-2xl p-8 md:p-12 text-center">
-  <h3 className="font-serif font-bold text-2xl md:text-3xl mb-6">Misi Kami</h3>
-  <ul className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-left list-decimal list-inside space-y-3">
-    <li>
-      Memberikan pelayanan pelayaran dan shipping agency yang cepat, tepat, aman, dan terpercaya.
-    </li>
-    <li>
-      Memberikan solusi persewaan alat berat yang efisien dan cost-effective.
-    </li>
-    <li>
-      Membangun kemitraan strategis dengan pelanggan dan mitra perusahaan berdasarkan kepercayaan dan transparansi.
-    </li>
-    <li>
-      Menciptakan lingkungan kerja yang aman dan memberdayakan bagi seluruh karyawan.
-    </li>
-    <li>
-      Mengutamakan keselamatan, kualitas, dan kepuasan pelanggan.
-    </li>
-  </ul>
-</div>
+      {/* Contact CTA */}
+      <section className="py-20 bg-accent">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-serif font-bold text-3xl md:text-4xl text-accent-foreground mb-6">
+            Siap Bermitra dengan Kami?
+          </h2>
+          <p className="text-xl text-accent-foreground/90 mb-8 max-w-3xl mx-auto">
+            Bergabunglah bersama ratusan klien yang sudah mempercayai PT. Trans Marindo Succes untuk kebutuhan pengiriman global mereka
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* TODO: Direct */}
+            <Button
+              size="lg"
+              variant="secondary"
+              className="bg-white text-accent hover:bg-white/90 cursor-pointer"
+              onClick={() => router.push('/services')}
+            >
+              Dapatkan Penawaran
+            </Button>
 
-            </div>
-          </section>
-          
-          {/* Contact CTA */}
-          <section className="py-20 bg-accent">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="font-serif font-bold text-3xl md:text-4xl text-accent-foreground mb-6">
-                Siap Bermitra dengan Kami?
-              </h2>
-              <p className="text-xl text-accent-foreground/90 mb-8 max-w-3xl mx-auto">
-                Bergabunglah bersama ratusan klien yang sudah mempercayai PT. Trans Marindo Succes untuk kebutuhan pengiriman global mereka
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" variant="secondary" className="bg-white text-accent hover:bg-white/90">
-                  Dapatkan Penawaran
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-accent bg-transparent"
-                >
-                  Hubungi Kami
-                </Button>
-              </div>
-            </div>
-          </section>
-        </main>
+            {/* TODO: Direct */}
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-accent bg-transparent cursor-pointer"
+              onClick={() => {
+                window.open(`https://wa.me/085333379115`, "_blank", "noopener,noreferrer");
+              }}
+            >
+              Hubungi Kami
+            </Button>
+          </div>
+        </div>
+      </section>
+    </main>
   )
 }
