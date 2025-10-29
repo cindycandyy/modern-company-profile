@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Package, FileText, MapPin, Ship, ShipWheel, Container, Shield, BarChart3, Headphones } from "lucide-react"
+import { useRouter } from "next/navigation"
 
 const mainServices = [
   {
@@ -74,6 +75,12 @@ const industries = [
 ]
 
 export default function ServicesPage() {
+  const router = useRouter();
+
+  const handleView = () => {
+    router.push("/viewer?file=PROSEDUR PENYEWAAN KAPAL PT TRANS MARINDO SUCCES.pdf");
+  };
+
   return (
     <main className="min-h-screen">
       <Navigation />
@@ -124,7 +131,9 @@ export default function ServicesPage() {
                       </div>
                     ))}
                   </div>
-                  <Button className="w-full mt-6 bg-accent hover:bg-accent/90 text-accent-foreground">
+                  <Button
+                    onClick={handleView}
+                    className="w-full mt-6 bg-accent hover:bg-accent/90 text-accent-foreground cursor-pointer ">
                     Learn More
                   </Button>
                 </CardContent>
