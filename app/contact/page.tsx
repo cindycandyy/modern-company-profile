@@ -8,7 +8,7 @@ const offices = [
     city: "Surabaya",
     country: "Jawa Timur, Indonesia",
     type: "Kantor Pusat",
-    address: "Pelidno Place Office tower, Jl. Perak Timur No. 478, Lantai 9, Perak Timur, Kec. Pabean Cantikan, Surabaya, Jawa Timur, 60165",
+    address: "Pelindo Place Office tower, Jl. Perak Timur No. 478, Lantai 9, Perak Timur, Kec. Pabean Cantikan, Surabaya, Jawa Timur, 60165",
     phone: "-",
     email: "-",
     hours: "Senin - Jum'at: 09.00 s/d 17.00",
