@@ -1,7 +1,11 @@
+"use client"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Ship, Globe, Shield } from "lucide-react"
+import { useRouter } from "next/navigation";
 
 export function HeroSection() {
+  const router = useRouter();
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -26,14 +30,24 @@ export function HeroSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+          {/* TODO: Direct */}
+          <Button
+            size="lg"
+            className="bg-accent hover:bg-accent/90 text-accent-foreground cursor-pointer"
+            onClick={() => {
+              window.open(`https://wa.me/085333379115`, "_blank", "noopener,noreferrer");
+            }}
+          >
             Dapatkan Penawaran
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
+
+          {/* TODO: Direct */}
           <Button
             size="lg"
             variant="outline"
-            className="border-white text-white hover:bg-white hover:text-primary bg-transparent"
+            className="border-white text-white hover:bg-white hover:text-primary bg-transparent cursor-pointer"
+            onClick={() => router.push('/services')}
           >
             Pelajari Layanan Kami
           </Button>
